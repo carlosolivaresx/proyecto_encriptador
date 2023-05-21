@@ -1,0 +1,277 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.encabezado {
+    text-align: center;
+    background:  #baaded;
+    padding: 10px;
+
+}
+
+.nombre-imagen {
+    width: 940px;
+    text-align:left;
+    text-transform: uppercase;
+    font-family:"inter"; 
+    color:rgb(0, 139, 125);
+
+}
+
+.logo {
+    width: 40px;
+    transform: translateX(0px);
+    animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);   
+    }
+    50% {
+        transform: translateY(-60px);   
+    }
+    100% {
+        transform: translateY(0px);   
+    }
+}
+
+.input {
+    display: flex;
+    text-align: center;
+    background:#E5E5E5 ;
+   
+}
+
+.contenido-input {
+
+    display: inline-block;
+
+    width: 940px;
+    margin: 0 auto
+      
+}
+
+.cuadro {
+   
+    font-size: 30px;
+    text-transform: lowercase;
+    color: rgb(22, 53, 145);
+    padding: 30px;
+    box-sizing:border-box; 
+    border-radius: 10px;
+    margin-bottom: 80px 0;
+    border: none;
+    background:#E5E5E5 ;
+   outline: none;
+ 
+}
+
+::placeholder {
+    color: #0a3871;
+  
+   
+}
+
+.evento {
+    position: relative;
+    width:400px;
+    margin: 0 ;
+    
+}
+
+.mensaje {
+   
+    background-image: url(IMAGENES/Muñeco.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:200px 95px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline: none;
+    border:none;
+    display: block;
+    
+}
+
+.mensaje-placeholder {
+    
+    position: absolute;
+    text-align:center;
+    top: 5px; /* Ajusta la posición vertical del mensaje */
+    left: 5px; /* Ajusta la posición horizontal del mensaje */
+    color: #999; /* Cambia el color del mensaje según tus preferencias */
+    font-size: 12px; /* Ajusta el tamaño de fuente del mensaje según tus preferencias */
+    pointer-events: none; /* Permite hacer clic a través del mensaje */
+   
+  }
+
+  .mensaje-placeholder:first-line {
+
+    font-weight: bold;
+    font-size: 15px;
+    margin:20px
+
+  }
+
+  .hide-placeholder {
+    display: none;
+  }
+
+.boton-copiar {
+   
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    color: #0a3871;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: white;
+    margin:0  20px;
+    padding: 8px 120px;
+    cursor: pointer;
+    
+}
+.boton-copiar:hover {
+    transform: scale(1.1);
+}
+  
+.botones-aviso {
+   text-align: center;
+    background:#E5E5E5 ;
+    padding: 10px;
+}
+
+.aviso {
+    text-align: center;
+    width: 890px;
+    padding: 0 auto;
+    font-size: 15px;
+   
+
+}
+
+.button {
+
+    width: 940px;
+    padding: 0 auto;
+    text-align: center;
+}
+
+.btn-encriptar {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: rgb(22, 53, 145);
+    margin: 0;
+    width: 150px;
+    padding: 8px 8px;
+    color: #ffffff;
+    cursor: pointer;
+   
+}
+
+.btn-desencriptar {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: #0a3871;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+    margin:0  20px;
+    padding: 8px 8px;
+    cursor: pointer;
+    
+}
+
+.btn-encriptar:hover{
+   
+    transform: scale(1.1);
+  
+}
+
+.btn-desencriptar:hover{
+
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background:#E5E5E5 ; 
+    padding: 2px;
+   
+}
+.autor {
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif 
+}
+
+.nav-links a:not(:last-child) {
+    margin-right: 30px; 
+  }
+
+.git {
+    max-width: 3%;
+    height: auto;
+    
+}
+.git:hover {
+    transform: scale(1.1);
+}
+
+.linkedin {
+    max-width: 8%;
+    height: auto;
+}
+.linkedin:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:480px){
+
+    .encabezado{
+
+        width: 140%;
+    }
+
+    .input {
+
+        width: 144%;
+        display: block;
+    }
+    
+    .nombre-imagen,.contenido-input,.aviso,.button{
+        width: auto;
+    }
+
+    .botones-aviso {
+        width: 140%;
+    }
+
+    .aviso {
+        text-align: left;
+    }
+
+    .button {
+      
+       display: flex;
+    }
+    
+    footer {
+
+        width: 140%;
+        text-align: left; 
+    }
+    
+    .autor {
+        text-align: left;
+    }
+}
+    

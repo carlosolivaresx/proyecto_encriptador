@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel = "stylesheet" href="reset.css">
+  <link rel = "stylesheet" href="style_1.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">    
+  <title>Encriptador/Desencriptador</title>
+</head>
+
+<body>
+  <h1>Encriptador/Desencriptador</h1>
+  
+  <label for="texto">Texto:</label>
+  <textarea id="texto" rows="5"></textarea>
+  
+  <br>
+  
+  <button onclick="encriptar()">Encriptar</button>
+  <button onclick="desencriptar()">Desencriptar</button>
+  
+  <br>
+  
+  <label for="resultado">Resultado:</label>
+  <textarea id="resultado" rows="5" readonly></textarea>
+  
+  <script>
+    function encriptar() {
+      let texto = document.getElementById("texto").value;
+      let resultado = document.getElementById("resultado");
+      
+      // Reemplazar las letras según las llaves de encriptación
+      texto = texto.replace(/e/g, "enter");
+      texto = texto.replace(/i/g, "imes");
+      texto = texto.replace(/a/g, "ai");
+      texto = texto.replace(/o/g, "ober");
+      texto = texto.replace(/u/g, "ufat");
+      
+      resultado.value = texto;
+    }
+    
+    function desencriptar() {
+      let texto = document.getElementById("texto").value;
+      let resultado = document.getElementById("resultado");
+      
+      // Reemplazar las palabras encriptadas según las llaves de desencriptación
+      texto = texto.replace(/enter/g, "e");
+      texto = texto.replace(/imes/g, "i");
+      texto = texto.replace(/ai/g, "a");
+      texto = texto.replace(/ober/g, "o");
+      texto = texto.replace(/ufat/g, "u");
+      
+      resultado.value = texto;
+    }
+  </script>
+</body>
+</html>
